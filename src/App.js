@@ -4,7 +4,7 @@ import Auth from "./Pages/Auth";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Auth />
     </div>
   );

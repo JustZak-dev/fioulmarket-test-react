@@ -1,0 +1,24 @@
+.tab-header {
+    display: inline-flex;
+    justify-content: center;
+    width: 45%;
+    padding: 12px;
+    background-color: rgba(128, 128, 128, 0.32);
+    color: rgba(0, 0, 0, 0.67);
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.tab-header.active {
+    color: #3594ff;
+    background-color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.show {
+    display: block;
+}
