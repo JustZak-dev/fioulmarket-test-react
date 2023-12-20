@@ -1,11 +1,11 @@
 import React from 'react';
-import RegistrationForm from './Form/RegistrationForm';
 import './App.css';
+import Auth from "./Pages/Auth";
 
 function App() {
   return (
     <div className="App">
-      <RegistrationForm />
+      <Auth />
     </div>
   );
 }
