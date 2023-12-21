@@ -21,4 +21,6 @@
 
 .tab-content.show {
     display: block;
+    margin: auto;
+    width: 60%;
 }

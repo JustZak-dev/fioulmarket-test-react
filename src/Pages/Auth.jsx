@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import TabContainer from "../Tab/TabContainer";
 import TabHeader from "../Tab/Components/TabHeader";
 import TabContent from "../Tab/Components/TabContent";

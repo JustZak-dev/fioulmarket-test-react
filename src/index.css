@@ -16,3 +16,21 @@ code {
   margin: auto;
   width: 50%;
 }
+
+.alert {
+  display: block;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.alert-success {
+  background-color: #16bc16;
+  color: white;
+}
+
+.alert-error {
+  background-color: #d13a3a;
+  color: white;
+}
