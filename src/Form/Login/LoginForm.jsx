@@ -3,6 +3,7 @@ import './LoginForm.css'
 import {useForm} from 'react-hook-form'
 import Input from "../Components/Input";
 import Alert from "../Components/Alert";
+import {changePasswordType} from "../../Helpers/Handler";
 
 export default function LoginForm() {
     const { register, handleSubmit, formState: { errors, isValid } } = useForm({
@@ -14,12 +15,10 @@ export default function LoginForm() {
     const openedEyeEl = useRef()
     const closedEyeEl = useRef()
 
-    const handleChangePasswordType = (e) => {
-        let el = e.target
+    const handleChangePasswordType = (baseEl) => {
+        const passwordEl = document.querySelector('input[name=password]')
 
-        if(e.target.nodeName !== 'svg') {
-            el = e.target.parentNode
-        }
+        const isChanged = changePasswordType(baseEl, passwordEl)
 
         const showEye = (eye) => {
             const openedEye = openedEyeEl.current
@@ -34,21 +33,17 @@ export default function LoginForm() {
             }
         }
 
-        const password = document.querySelector('input[name=password]')
-
-        if(el.classList.contains('active')) {
-            password.setAttribute('type', 'text')
-
+        if(isChanged) {
             showEye('active')
         } else {
-            password.setAttribute('type', 'password')
-
             showEye('disable')
         }
     }
 
-    const onSubmit = () => {
+    const onSubmit = (data) => {
         setSuccess('Connexion réussie.')
+
+        alert(JSON.stringify(data))
     }
 
     return (

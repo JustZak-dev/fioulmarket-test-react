@@ -5,67 +5,8 @@
     margin: auto;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    position: relative;
-}
-
-.input-group label {
-    color: grey;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.input-group input {
-    border-style: solid;
-    border-color: rgba(128, 128, 128, 0.25);
-    border-width: 1px;
-    padding: 10px;
-    border-radius: 6px;
-}
-
-.input-group input:focus-visible {
-    outline: none;
-    border-color: rgba(128, 128, 128, 1);
-}
-
-.input-group .icon {
-    position: absolute;
-    top: 26px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.input-group .icon .disable {
-    display: none;
-}
-
-.input-group .icon svg {
-    height: 24px;
-    width: 24px;
-}
-
 .forgot-password {
     color: grey;
     text-decoration: underline;
     text-align: right;
-}
-
-.submit {
-    padding: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: #f67373;
-    text-transform: uppercase;
-    border: none;
-    box-shadow: 0 2px 3px #ff8989;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.submit:disabled {
-    cursor: not-allowed;
-    opacity: 0.8;
 }
